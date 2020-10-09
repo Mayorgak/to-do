@@ -12,9 +12,13 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
-  useUnifiedTopology: true, useNewUrlParser: true 
-});
+mongoose.connect(
+  "mongodb+srv://Mayorgak:mongo000@cluster0.lzhgv.mongodb.net/todolistDB",
+  {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+  }
+);
 
 const itemsSchema = {
     name: String
@@ -122,7 +126,6 @@ app.post("/delete",function(req, res){
  
    });
   });
-
 
 
 app.get("/work" ,function( req,res) {

@@ -12,5 +12,5 @@ Simple to do list created to assist with completeing daily tasks. 📅📝
  * Ejs 
  * Node.js
  * Express
-
+ * Mongo DB
 
